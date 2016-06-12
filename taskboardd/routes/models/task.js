@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
     Task = mongoose.model('task', {
         hash: String,
-        parentHash: String,
+        parent: mongoose.Schema.Types.ObjectId,
         owner: mongoose.Schema.Types.ObjectId,
         groups: mongoose.Schema.Types.ObjectId,
         title: String,
