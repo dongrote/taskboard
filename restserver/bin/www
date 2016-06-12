@@ -1,3 +1,0 @@
-#!/bin/bash
-serverIndexPath="$(dirname $0)/../index.js"
-node "$serverIndexPath" $1
