@@ -10,7 +10,23 @@ var mongoose = require('mongoose'),
         deadline: Date,
         priority: {
             type: Number,
-            enum: [0,1,2,3,4]
+            enum: [
+                0, /* xtrm */
+                1, /* high */
+                2, /* norm */
+                3, /* low  */
+                4  /* wishlist */
+            ]
+        },
+        state: {
+            type: Number,
+            enum: [
+                0, /* open */
+                1, /* closed */
+                2, /* in progress */
+                3, /* rejected */
+                4, /* blocked (by sub-task) */
+            ]
         },
         notes: String
     });
