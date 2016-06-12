@@ -1,0 +1,29 @@
+{
+  "name": "restserver",
+  "version": "1.0.0",
+  "description": "HTTP Server exposing a RESTful interface for taskboard",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.20"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dongrote/taskboard.git"
+  },
+  "author": "Don Grote",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongrote/taskboard/issues"
+  },
+  "homepage": "https://github.com/dongrote/taskboard#readme"
+}
