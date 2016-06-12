@@ -22,7 +22,7 @@ function taskHandler(req, res) {
 }
 
 exports = module.exports = {
-    path: '/task',
+    path: '/tasks',
     handler: (req, res) => {
         switch (req.method) {
             case "GET":

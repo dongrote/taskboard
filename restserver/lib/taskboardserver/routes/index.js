@@ -1,9 +1,9 @@
 "use strict";
 
 var root = require('./root'),
-    task = require('./task');
+    tasks = require('./tasks');
 
 module.exports = [
     {path: root.path, handler: root.handler},
-    {path: task.path, handler: task.handler}
+    {path: tasks.path, handler: tasks.handler}
 ];
